@@ -16,6 +16,6 @@ module Twitest
     # -- all .rb files in that directory are automatically loaded.
 
     # to auto load lib/ directory
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.paths.add 'lib', eager_load: true
   end
 end

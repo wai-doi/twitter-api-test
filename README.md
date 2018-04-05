@@ -9,6 +9,7 @@ twitter apiのテストです
 * [Railsでツイート検索アプリ](https://qiita.com/nishina555/items/1cebe7c953c5821158ad)
 
 ### その他Railsについて
-
-* [lib以下のファイル読み込み](https://qiita.com/azusanakano/items/885fe3236977580b00c9)
 * [開発時とデプロイ時の環境変数について](https://qiita.com/uma0317/items/e142661c004f68d858a5)
+
+### ハマった・注意
+* [lib以下のロード](https://qiita.com/joooee0000/items/3ab0f3d791e0d0beb6390)
