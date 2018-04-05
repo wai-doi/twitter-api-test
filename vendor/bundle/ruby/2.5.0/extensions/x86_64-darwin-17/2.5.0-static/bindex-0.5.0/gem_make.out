@@ -1,0 +1,15 @@
+current directory: /Users/doiyusuke/github/twitest/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/Users/doiyusuke/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180405-40141-1vsthgj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/doiyusuke/github/twitest/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/doiyusuke/github/twitest/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/doiyusuke/github/twitest/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180405-40141-ovjpnd/bindex
