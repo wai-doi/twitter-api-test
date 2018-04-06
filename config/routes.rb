@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  root 'tweets#index'
-  get 'tweets/index'
+  root 'tweets#top'
 
-  get 'tweets/show'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'search', to: 'tweets#search'
+  get 'post', to: 'tweets#post'
+  get 'time_post', to: 'tweets#time_post'
 end

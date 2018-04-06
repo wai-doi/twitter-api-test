@@ -13,10 +13,6 @@ class TwitterClient
     end
   end
 
-  def twieet(str)
-    @client.update(str)
-  end
-
   # 自分のプロフィールを表示
   def show_my_profile
     puts @client.user.screen_name   # アカウントID

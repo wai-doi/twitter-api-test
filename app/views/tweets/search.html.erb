@@ -1,0 +1,6 @@
+<h2><%= "キーワード : #{@keyword}" if @keyword.present? %></h2>
+<ul>
+  <% @tweets.each.with_index(1) do |tweet, i| %>
+  <li><%= "Tweet#{i} : #{tweet.contents}" %></li>
+  <% end %>
+</ul>

@@ -1,7 +1,10 @@
 class TweetsController < ApplicationController
-  before_action :make_client, only: [:index]
+  before_action :make_client, only: [:search, :post, :time_post]
 
-  def index
+  def top
+  end
+
+  def search
     @tweets = []
     if params[:keyword].present?
       @keyword = params[:keyword]
@@ -10,7 +13,21 @@ class TweetsController < ApplicationController
     end
   end
 
-  def show
+  def trend
+
+  end
+
+  def post
+    if params[:message].present?
+      @client.update(params[:message])
+    end
+    redirect_to root_path
+  end
+
+  def time_post
+    now = Time.now.to_s
+    @client.update(now)
+    redirect_to root_path
   end
 
   private

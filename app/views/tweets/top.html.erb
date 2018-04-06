@@ -1,0 +1,19 @@
+
+<h1>Search</h1>
+<div class='content'>
+  <div id="search-box">
+    <%= form_tag(search_path, method: :get) do %>
+      <%= text_field_tag :tweet, nil,  id: "tweet_search", name: "keyword", placeholder: "キーワードを入力", style: "width: 200px;"%>
+      <button title="検索" type="submit">検索</button>
+    <% end %>
+  </div>
+
+
+  <h1>post</h1>
+  <%= form_tag(post_path, method: "get") do %>
+    <%= text_area_tag(:message) %>
+    <%= submit_tag("投稿") %>
+  <% end %>
+
+  <h1>時間を投稿</h1>
+  <%= button_to "時間を投稿", time_post_path, {method: :get} %>
